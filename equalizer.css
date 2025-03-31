@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+}
+
+/********** Fonts **********/
+
+* {
+  font-family: "ibm plex sans", sans-serif;
+}
+
+h1 {
+  font-size: clamp(50px, 6vw, 88px);
+  margin-bottom: 0;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0px;
+}
+
+.price {
+  font-size: 56px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.buttons {
+  font-size: 20px;
+  font-weight: 550;
+}
+
+/********** Landing Page **********/
+
+html {
+  overflow-x: hidden;
+
+  margin-top: 0;
+}
+.root-container {
+  /* border: 2px solid black; */
+  /* width: clamp(675px, 80%, 81%); */
+  width: 80%;
+  min-height: 100vh;
+  max-width: 1600px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.top-right-container {
+  position: absolute;
+  /* top: -9vw; */
+  top: -180px;
+  right: -10vw;
+  width: clamp(260px, 17vw, 312px);
+}
+
+.top-right-img {
+  width: 100%;
+}
+
+.bg-container {
+  position: absolute;
+  top: -180px;
+  left: -14vw;
+}
+
+.bg-img {
+  width: 100%;
+  transform: scale(1.3);
+  z-index: -1;
+}
+
+.hero {
+  position: relative;
+
+  /* border: 2px solid cyan; */
+}
+
+.hero h1 {
+  width: min(80%, 920px);
+  /* border: 2px solid yellow; */
+}
+
+.hero p {
+  width: min(70%, 736px);
+  /* border: 2px solid firebrick; */
+}
+
+/********** Bottom **********/
+
+.bottom {
+  position: relative;
+}
+
+.bg-div {
+  height: 600px;
+  margin-top: 200px;
+  background-color: #191826;
+  position: relative;
+  z-index: 1;
+}
+
+.bg-p2-container {
+  position: absolute;
+  left: calc(25vw - ((1600px - 100vw) * 0.24));
+  /* border: 2px solid cyan; */
+  max-width: 312px;
+  width: 100%;
+  z-index: 0;
+}
+
+.bg-p2 {
+  width: 100%;
+}
+
+.illus-app-container {
+  position: absolute;
+  width: clamp(270px, 20vw, 320px);
+  /* border: 2px solid red; */
+  top: -100px;
+  left: calc(7.5vw - ((1600px - 100vw) * 0.05));
+  z-index: 1;
+}
+
+.illus-app {
+  width: 100%;
+}
+
+.premium-eq {
+  background-color: #fa7453;
+  max-width: 520px;
+  padding: 24px;
+  position: absolute;
+  top: 90px;
+  left: calc(36vw - ((1600px - 100vw) * 0.05));
+  z-index: 1;
+  margin-right: 24px;
+  border-radius: 12px;
+}
+
+.premium-eq > *:not(a) {
+  width: 90%;
+  margin: 12px auto;
+}
+
+.price-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.ios {
+  background-color: #191826;
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 24px 0;
+  border-radius: 16px;
+  margin-bottom: 16px;
+
+  text-decoration: none;
+}
+
+.android {
+  background-color: white;
+  color: #191826;
+  display: block;
+  text-align: center;
+  border-radius: 16px;
+  padding: 24px 0;
+  text-decoration: none;
+}
+
+/********** Footer **********/
+
+footer {
+  margin-top: 150px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 0;
+}
+
+.icons img + img {
+  margin-left: 24px;
+}
+
+@media (max-width: 860px) {
+  body {
+    margin: 0;
+  }
+
+  header,
+  .hero {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .root-container {
+    width: 100%;
+  }
+
+  .top-right-container {
+    display: none;
+  }
+
+  .hero h1 {
+    width: 100%;
+    /* border: 2px solid yellow; */
+  }
+
+  .hero p {
+    width: 100%;
+    /* border: 2px solid firebrick; */
+  }
+
+  .bg-container {
+    position: absolute;
+    background-image: url("assets/bg-main-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 655px;
+    /* border: 2px solid yellow; */
+    left: 100px;
+    top: -250px;
+    transform: scale(1.5);
+  }
+
+  .bg-div {
+    max-height: 480px;
+    margin-top: 200px;
+    background-color: #191826;
+    position: relative;
+    z-index: 1;
+  }
+  .bg-img {
+    display: none;
+  }
+
+  .bg-p2-container {
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%) scale(1.1);
+    z-index: 0;
+  }
+
+  .illus-app-container {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .premium-eq {
+    position: relative;
+    inset: 0;
+    max-width: 100%;
+    border-radius: 0;
+    margin-right: 0;
+    z-index: 1;
+  }
+
+  footer {
+    width: 90%;
+    margin: 150px auto 0 auto;
+  }
+}
