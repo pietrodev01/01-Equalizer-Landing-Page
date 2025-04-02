@@ -7,5 +7,6 @@ Equalizer Landing Page
 - if you have multiple transforms they need to be on one line or else the one below will overwrite the above.
 - to deal with overflow due to negative positions on absolute elements overflox-x needs to be on the HTML element as well as the body element.
 - change to fix bug on github pages
+- used filter to change the color of the apple icon
 
 ![screenshot](screenshot.png)

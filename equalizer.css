@@ -43,8 +43,6 @@ html {
   margin-top: 0;
 }
 .root-container {
-  /* border: 2px solid black; */
-  /* width: clamp(675px, 80%, 81%); */
   width: 80%;
   min-height: 100vh;
   max-width: 1600px;
@@ -54,7 +52,6 @@ html {
 
 .top-right-container {
   position: absolute;
-  /* top: -9vw; */
   top: -180px;
   right: -10vw;
   width: clamp(260px, 17vw, 312px);
@@ -163,8 +160,25 @@ html {
   padding: 24px 0;
   border-radius: 16px;
   margin-bottom: 16px;
-
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.ios img {
+  margin-bottom: 2px;
+}
+
+.ios:hover {
+  background-color: #66e2dc;
+  color: #191826;
+}
+
+.ios:hover img {
+  filter: brightness(0) saturate(100%) invert(5%) sepia(9%) saturate(1150%)
+    hue-rotate(197deg) brightness(92%) contrast(95%);
 }
 
 .android {
@@ -175,6 +189,14 @@ html {
   border-radius: 16px;
   padding: 24px 0;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.android:hover {
+  background-color: #ffb964;
 }
 
 /********** Footer **********/
